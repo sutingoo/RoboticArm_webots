@@ -3,7 +3,7 @@
 This project was a attempt to recreate the robot made in the project 'Crisálida' with my robotics investigation group.
 
 <p align="center" >
-  <img src="..." width="500" title="Webots_arm">
+  <img src="Screenshot from 2026-02-13 00-07-42.png" width="500" title="Webots_arm_desktop">
 </p>
 
 ## Characteristics
