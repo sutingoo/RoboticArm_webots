@@ -10,7 +10,7 @@ This project was a attempt to recreate the robot made in the project 'Crisálida
 
 ## Demo
 <p align="center" >
-  <img src="..." width="500" title="Webots_arm">
+  <img src="Webots_Robot2.gif" width="500" title="Webots_arm">
 </p>
 
 ## Structure
