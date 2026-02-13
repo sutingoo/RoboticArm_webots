@@ -2,6 +2,10 @@
 
 This project was a attempt to recreate the robot made in the project 'Crisálida' with my robotics investigation group.
 
+<p align="center" >
+  <img src="..." width="500" title="Webots_arm">
+</p>
+
 ## Characteristics
 * **Simulator:** Webots R2025a.
 * **Language:** Python 3.10+.
