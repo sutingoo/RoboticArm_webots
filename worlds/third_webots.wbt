@@ -1,0 +1,143 @@
+#VRML_SIM R2025a utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2025a/projects/objects/floors/protos/RectangleArena.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.3640731341970815 0.10410977437316249 0.9255333099547973 2.624136854809393
+  position 0.4626827566894755 -0.23969803542122703 0.48557711417869437
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+}
+Robot {
+  children [
+    Solid {
+      translation 0 0 0.012475977651285124
+      children [
+        DEF base Shape {
+          appearance PBRAppearance {
+            baseColor 0.101961 0.372549 0.705882
+            roughness 1
+            metalness 0
+          }
+          geometry Box {
+            size 0.025 0.025 0.025
+          }
+        }
+      ]
+      boundingObject USE base
+      physics Physics {
+      }
+      linearVelocity 0 0 -1.8975178477376416e-09
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        position -1.1528425622011893
+        axis 0 0 1
+      }
+      device [
+        RotationalMotor {
+          name "motor1"
+        }
+      ]
+      endPoint Solid {
+        translation -4.772131684194299e-10 1.2446640710796182e-09 0.024995803081313637
+        rotation -1.8066615842236486e-08 -2.8321081409151412e-08 -0.9999999999999993 1.1528425413332801
+        children [
+          HingeJoint {
+            jointParameters HingeJointParameters {
+              position -0.6000000095205867
+              axis 0 1 0
+            }
+            device [
+              RotationalMotor {
+                name "motor2"
+              }
+            ]
+            endPoint Solid {
+              translation -0.02539179949107795 0 0.037151803705942614
+              rotation 0.00042514422648173 -0.999999904571041 0.00010054996495408634 0.6000001275616141
+              children [
+                HingeJoint {
+                  jointParameters HingeJointParameters {
+                    position -0.4042403662821815
+                    axis 0 1 0
+                    anchor 0 0 0.05
+                  }
+                  device [
+                    RotationalMotor {
+                      name "motor3"
+                    }
+                  ]
+                  endPoint Solid {
+                    translation -0.019666652701416022 -5.911299999999985e-07 0.09597089049145817
+                    rotation -8.115341188765048e-07 -0.9999999999996445 -2.2844625199597968e-07 0.4042403665734171
+                    children [
+                      DEF esla2 Shape {
+                        appearance PBRAppearance {
+                          baseColor 0 1 0
+                          roughness 1
+                          metalness 0
+                        }
+                        geometry Cylinder {
+                          height 0.1
+                          radius 0.005
+                        }
+                      }
+                    ]
+                    boundingObject USE esla2
+                    physics Physics {
+                    }
+                    linearVelocity -0.06515085484366784 -0.04388268277321719 0.023887947836437044
+                    angularVelocity 0.5191801366925269 0.2154143719057845 0.799884232566135
+                  }
+                }
+                DEF esla Shape {
+                  appearance PBRAppearance {
+                    baseColor 0.101961 0.372549 0.705882
+                    roughness 1
+                    metalness 0
+                  }
+                  geometry Cylinder {
+                    height 0.1
+                    radius 0.005
+                  }
+                }
+              ]
+              boundingObject USE esla
+              physics Physics {
+              }
+              linearVelocity -0.018688663138316863 -0.007953483683882505 1.131400819542199e-09
+              angularVelocity 2.309310517107924e-09 -4.187247382650263e-10 0.8000000060402709
+            }
+          }
+          DEF cil Shape {
+            appearance PBRAppearance {
+              baseColor 0.8 0 0
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              height 0.005
+              radius 0.0125
+            }
+          }
+        ]
+        name "solid(1)"
+        boundingObject USE cil
+        physics Physics {
+        }
+        linearVelocity -6.241265949300241e-08 -1.9907874653606176e-08 5.396136875532865e-10
+        angularVelocity -7.38714136468918e-10 4.9624086141675736e-09 0.8000000002060706
+      }
+    }
+  ]
+  controller "my_controller4"
+}
